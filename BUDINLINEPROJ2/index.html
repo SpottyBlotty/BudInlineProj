@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bud INline Ostrava</title>
+    <meta name="description" content="Bud INline Ostrava - Aktivity a kurzy bruslení" />
+    <meta name="author" content="Bud INline Ostrava" />
+    <link rel="stylesheet" href="/src/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="#" class="logo">
+            <span class="logo-text">Bud<span class="logo-highlight">IN</span>line</span>
+          </a>
+          <nav class="nav-desktop">
+            <ul class="nav-links">
+              <li><a href="#activities" class="nav-link">Aktivity</a></li>
+              <li><a href="#calendar" class="nav-link">Kalendář</a></li>
+              <li><a href="#schedule" class="nav-link">Rozvrh</a></li>
+              <li><a href="#video" class="nav-link">
+                Přihlásit </a></li>
+            </ul>
+          </nav>
+          <button class="menu-toggle" id="menuToggle">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="nav-mobile">
+          <ul class="mobile-nav-links">
+            <li><a href="#activities" class="mobile-nav-link">Aktivity</a></li>
+            <li><a href="#calendar" class="mobile-nav-link">Kalendář</a></li>
+            <li><a href="#schedule" class="mobile-nav-link">Rozvrh</a></li>
+            <li><a href="#video" class="mobile-nav-link">Video</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+          <!-- Основной баннер -->
+    <!-- Основной баннер -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h2>  Buď INline <br>Ostrava</h2>
+            <p>Jsme volnočasová společnost.
+
+              Nabízíme výuku inline bruslení, lyžování a snowboardingu.
+              
+              Pořádáme příměstské i pobytové tábory.
+              
+              Zajišťujeme kurzy a kroužky pro školy a školky.
+              
+              Vytváříme programy na míru pro firmy a kluby.
+              
+              Organizujeme sportovně kulturní akce.
+              
+              Provozujeme půjčovnu.
+              
+              Buď INline Ostrava</p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn primary-btn">Kontaktujte nás</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+      <!-- Hero Section
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">Objevte radost z bruslení</h1>
+            <p class="hero-subtitle">Připojte se k nejaktivnější komunitě bruslařů v Ostravě</p>
+            <button class="btn-primary hero-button">Začít bruslit</button>
+          </div>
+        </div>
+        <div class="hero-background"></div>
+      </section> -->
+
+      <!-- Calendar Section -->
+      <section class="calendar-section" id="calendar">
+        <div class="container">
+          <h2 class="section-title">Nadcházející události</h2>
+          <p class="section-subtitle">Nepropásněte naše nejbližší akce a setkání</p>
+          
+          <div class="events-grid">
+            <div class="event-card">
+              <div class="event-date">
+                <span class="event-day">15</span>
+                <span class="event-month">Čvn</span>
+              </div>
+              <div class="event-details">
+                <h3 class="event-title">Městský běh na bruslích</h3>
+                <p class="event-description">Trasa po hlavních ulicích Ostravy s průvodcem</p>
+                <div class="event-info">
+                  <span class="event-time">16:00 - 18:00</span>
+                  <span class="event-location">Centrální park</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="event-card">
+              <div class="event-date">
+                <span class="event-day">22</span>
+                <span class="event-month">Čvn</span>
+              </div>
+              <div class="event-details">
+                <h3 class="event-title">Kurz pro začátečníky</h3>
+                <p class="event-description">Základy bruslení a základní techniky</p>
+                <div class="event-info">
+                  <span class="event-time">10:00 - 12:00</span>
+                  <span class="event-location">Sportovní hřiště</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="event-card">
+              <div class="event-date">
+                <span class="event-day">29</span>
+                <span class="event-month">Čvn</span>
+              </div>
+              <div class="event-details">
+                <h3 class="event-title">Rychlostní trénink</h3>
+                <p class="event-description">Lekce pro zkušené bruslaře</p>
+                <div class="event-info">
+                  <span class="event-time">18:00 - 20:00</span>
+                  <span class="event-location">Cyklodráha</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <button class="btn-primary calendar-button">Zobrazit všechny události</button>
+        </div>
+      </section>
+
+      <!-- Activities Section -->
+      <section class="activities-section" id="activities">
+        <div class="container">
+          <h2 class="section-title">Naše aktivity</h2>
+          <p class="section-subtitle">Vyberte si formát bruslení, který vám vyhovuje</p>
+          
+          <div class="activities-grid">
+            <div class="activity-card">
+              <div class="activity-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3 11.5V14l-3-3 4-3 2 3h2"/></svg>
+              </div>
+              <h3 class="activity-title">Skupinové lekce</h3>
+              <p class="activity-description">Pravidelné lekce pro všechny úrovně pod vedením zkušených trenérů</p>
+              <button class="btn-primary">Více informací</button>
+            </div>
+            
+            <div class="activity-card">
+              <div class="activity-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+              </div>
+              <h3 class="activity-title">Tréninky podle rozvrhu</h3>
+              <p class="activity-description">Flexibilní rozvrh tréninků pro pohodlné plánování vašeho času</p>
+              <button class="btn-primary">Více informací</button>
+            </div>
+            
+            <div class="activity-card">
+              <div class="activity-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
+              <h3 class="activity-title">Individuální kurzy</h3>
+              <p class="activity-description">Osobní lekce s instruktorem podle vašich cílů a úrovně přípravy</p>
+              <button class="btn-primary">Více informací</button>
+            </div>
+            
+            <div class="activity-card">
+              <div class="activity-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" y1="22" y2="12"/></svg>
+              </div>
+              <h3 class="activity-title">Půjčovna vybavení</h3>
+              <p class="activity-description">Pronájem bruslí a ochranného vybavení pro pohodlné učení</p>
+              <button class="btn-primary">Více informací</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Section -->
+      <section class="video-section" id="video">
+        <div class="container">
+          <div class="video-content">
+            <h2 class="section-title">Podívejte se na nás v akci</h2>
+            <p class="video-description">Naše bruslařská škola není jen výuka, ale i komunita lidí spojených láskou k aktivnímu životnímu stylu</p>
+            <div class="video-wrapper">
+              <div class="video-placeholder">
+                <button class="play-button">
+<video src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></video>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Schedule Section -->
+      <section class="schedule-section" id="schedule">
+        <div class="container">
+          <h2 class="section-title">Rozvrh lekcí</h2>
+          <p class="section-subtitle">Vyberte si vhodný čas pro tréninky</p>
+          
+          <div class="schedule-tabs">
+            <div class="schedule-tab-buttons">
+              <button class="schedule-tab-button active" data-tab="weekdays">Všední dny</button>
+              <button class="schedule-tab-button" data-tab="weekend">Víkendy</button>
+            </div>
+            
+            <div class="schedule-tab-content">
+              <div class="schedule-tab-pane active" id="weekdays">
+                <div class="schedule-grid">
+                  <div class="schedule-item">
+                    <span class="schedule-time">9:00 - 10:30</span>
+                    <h4 class="schedule-activity">Ranní skupina</h4>
+                    <p class="schedule-level">Začátečníci</p>
+                  </div>
+                  
+                  <div class="schedule-item">
+                    <span class="schedule-time">11:00 - 12:30</span>
+                    <h4 class="schedule-activity">Technika slalomu</h4>
+                    <p class="schedule-level">Střední úroveň</p>
+                  </div>
+                  
+                  <div class="schedule-item">
+                    <span class="schedule-time">16:00 - 17:30</span>
+                    <h4 class="schedule-activity">Dětská skupina</h4>
+                    <p class="schedule-level">Všechny úrovně</p>
+                  </div>
+                  
+                  <div class="schedule-item">
+                    <span class="schedule-time">18:00 - 19:30</span>
+                    <h4 class="schedule-activity">Večerní skupina</h4>
+                    <p class="schedule-level">Všechny úrovně</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="schedule-tab-pane" id="weekend">
+                <div class="schedule-grid">
+                  <div class="schedule-item">
+                    <span class="schedule-time">10:00 - 11:30</span>
+                    <h4 class="schedule-activity">Rodinná skupina</h4>
+                    <p class="schedule-level">Všechny úrovně</p>
+                  </div>
+                  
+                  <div class="schedule-item">
+                    <span class="schedule-time">12:00 - 14:00</span>
+                    <h4 class="schedule-activity">Freestyle</h4>
+                    <p class="schedule-level">Pokročilá úroveň</p>
+                  </div>
+                  
+                  <div class="schedule-item">
+                    <span class="schedule-time">15:00 - 16:30</span>
+                    <h4 class="schedule-activity">Mistrovská třída</h4>
+                    <p class="schedule-level">Střední úroveň</p>
+                  </div>
+                  
+                  <div class="schedule-item">
+                    <span class="schedule-time">17:00 - 19:00</span>
+                    <h4 class="schedule-activity">Městský běh</h4>
+                    <p class="schedule-level">Pro zkušené bruslaře</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="logo-text footer-logo">Bud<span class="logo-highlight">IN</span>line</span>
+            <p class="footer-description">Výuka bruslení v Ostravě pro všechny věkové kategorie a úrovně přípravy</p>
+          </div>
+          
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3 class="footer-heading">Navigace</h3>
+              <ul class="footer-nav">
+                <li><a href="#activities">Aktivity</a></li>
+                <li><a href="#calendar">Kalendář</a></li>
+                <li><a href="#schedule">Rozvrh</a></li>
+                <li><a href="#video">Video</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-heading">Kontakty</h3>
+              <ul class="footer-contact">
+                <li>Ul. Sportovní 123, Ostrava</li>
+                <li>+420 123 456 789</li>
+                <li>info@budinline.cz</li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-heading">Sociální sítě</h3>
+              <div class="footer-social">
+                <a href="#" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="#" class="social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p class="copyright">© 2023 BudINline Ostrava. Všechna práva vyhrazena.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/src/main.js"></script>
+  </body>
+</html>

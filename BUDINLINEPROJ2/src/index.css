@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 214 9% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 214 9% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 214 9% 15%;
+
+    --primary: 332 91% 70%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 213 70% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 213 70% 95%;
+    --accent-foreground: 213 70% 55%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 213 70% 55%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 214 9% 15%;
+    --foreground: 0 0% 98%;
+
+    --card: 214 9% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 214 9% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 332 91% 70%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 213 70% 55%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 214 9% 22%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 214 9% 22%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214 9% 22%;
+    --input: 214 9% 22%;
+    --ring: 0 0% 80%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-medium tracking-tight;
+  }
+  
+  body.menu-open {
+    @apply overflow-hidden;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 rounded-full bg-brand-pink text-white text-sm font-medium transition-all hover:opacity-90 active:scale-95;
+  }
+  
+  .activity-card {
+    @apply bg-white rounded-2xl p-6 shadow-sm border border-gray-100 transition-all hover:shadow-md;
+  }
+  
+  .activity-icon {
+    @apply w-16 h-16 text-brand-pink mx-auto mb-4;
+  }
+  
+  .burger-line {
+    @apply block w-6 h-0.5 bg-white mb-1.5 rounded-full transition-all duration-300;
+  }
+  
+  #menuToggle.active .burger-line:nth-child(1) {
+    @apply transform translate-y-2 rotate-45;
+  }
+  
+  #menuToggle.active .burger-line:nth-child(2) {
+    @apply opacity-0;
+  }
+  
+  #menuToggle.active .burger-line:nth-child(3) {
+    @apply transform -translate-y-2 -rotate-45;
+  }
+  
+  .mobile-menu {
+    @apply fixed top-0 left-0 w-full h-0 bg-gradient-to-b from-brand-blue to-brand-pink overflow-hidden transition-all duration-500 opacity-0 invisible pt-20 z-40;
+  }
+  
+  .mobile-menu.active {
+    @apply h-screen opacity-100 visible;
+  }
+  
+  .nav-link {
+    @apply relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 ease-in-out;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  
+  .mobile-link {
+    @apply relative inline-block transform transition-transform duration-300 hover:translate-x-2;
+  }
+}

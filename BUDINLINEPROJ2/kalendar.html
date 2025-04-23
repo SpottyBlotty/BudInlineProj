@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bud INline Ostrava</title>
+    <meta name="description" content="Bud INline Ostrava - Aktivity a kurzy bruslení" />
+    <meta name="author" content="Bud INline Ostrava" />
+    <link rel="stylesheet" href="/src/kalendar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="container">
+              <div class="header-content">
+                <a href="#" class="logo">
+                  <span class="logo-text">Bud<span class="logo-highlight">IN</span>line</span>
+                </a>
+                <nav class="nav-desktop">
+                  <ul class="nav-links">
+                    <li><a href="#activities" class="nav-link">Aktivity</a></li>
+                    <li><a href="#calendar" class="nav-link">Kalendář</a></li>
+                    <li><a href="#schedule" class="nav-link">Rozvrh</a></li>
+                    <li><a href="#video" class="nav-link">
+                      Přihlásit </a></li>
+                  </ul>
+                </nav>
+                <button class="menu-toggle" id="menuToggle">
+                  <span class="menu-icon"></span>
+                </button>
+              </div>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+              <nav class="nav-mobile">
+                <ul class="mobile-nav-links">
+                  <li><a href="#activities" class="mobile-nav-link">Aktivity</a></li>
+                  <li><a href="#calendar" class="mobile-nav-link">Kalendář</a></li>
+                  <li><a href="#schedule" class="mobile-nav-link">Rozvrh</a></li>
+                  <li><a href="#video" class="mobile-nav-link">Video</a></li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+
+          <main class="main-content">
+            <div class="calendar-container">
+              <h1 class="calendar-title">Kalendář událostí</h1>
+              
+              <div class="filters">
+                <div class="filter-group">
+                  <label for="category-select">Kategorie</label>
+                  <select id="category-select" class="filter-select">
+                    <option value="all">Všechny</option>
+                    <option value="camps">Tábory</option>
+                    <option value="courses">Kurzy</option>
+                    <option value="workshops">Workshopy</option>
+                  </select>
+                </div>
+                
+                <div class="filter-group">
+                  <label for="month-select">Měsíc</label>
+                  <select id="month-select" class="filter-select">
+                    <option value="2025-1">únor 2025</option>
+                    <option value="2025-2" selected>březen 2025</option>
+                    <option value="2025-3">duben 2025</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="month-navigation">
+                <a href="#" class="nav-button prev-month">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M15 18l-6-6 6-6"/>
+                  </svg>
+                  <span>únor 2025</span>
+                </a>
+                
+                <span class="current-month">Březen 2025</span>
+                
+                <a href="#" class="nav-button next-month">
+                  <span>duben 2025</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18l6-6-6-6"/>
+                  </svg>
+                </a>
+              </div>
+              
+              <!-- Static events container without JavaScript -->
+              <div class="events-container">
+                <!-- Day 1 -->
+                <div class="event-day">
+                  <h2 class="day-header">PÁTEK 7. BŘEZEN 2025</h2>
+                  <div class="day-events">
+                    <!-- Event 1 -->
+                    <a href="course-details.html?id=1" class="event-card">
+                      <div class="event-days">
+                        <span>DNY</span>
+                        <span>5</span>
+                      </div>
+                      
+                      <div class="event-details">
+                        <h3 class="event-title">Příměstský tábor Bruslík a Loděnice I</h3>
+                        <p class="event-organizer">Trojhalí Karolina</p>
+                        <div class="event-date">7. - 11. března 2025</div>
+                        
+                        <div class="event-capacity">
+                          <div class="capacity-bar">
+                            <div class="capacity-fill medium" style="width: 50%"></div>
+                          </div>
+                          <span class="capacity-text">
+                            20 / 40
+                          </span>
+                        </div>
+                      </div>
+                      
+                      <div class="event-action">
+                        <a href="reservation.html?id=1" class="reserve-button" onclick="event.stopPropagation()">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                          </svg>
+                          Rezervace
+                        </a>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                
+                <!-- Day 2 -->
+                <div class="event-day">
+                  <h2 class="day-header">PÁTEK 14. BŘEZEN 2025</h2>
+                  <div class="day-events">
+                    <!-- Event 2 -->
+                    <a href="course-details.html?id=2" class="event-card">
+                      <div class="event-days">
+                        <span>DNY</span>
+                        <span>5</span>
+                      </div>
+                      
+                      <div class="event-details">
+                        <h3 class="event-title">Příměstský tábor Bruslík a Loděnice II</h3>
+                        <p class="event-organizer">Trojhalí Karolina</p>
+                        <div class="event-date">14. - 18. března 2025</div>
+                        
+                        <div class="event-capacity">
+                          <div class="capacity-bar">
+                            <div class="capacity-fill medium" style="width: 40%"></div>
+                          </div>
+                          <span class="capacity-text">
+                            14 / 35
+                          </span>
+                        </div>
+                      </div>
+                      
+                      <div class="event-action">
+                        <a href="reservation.html?id=2" class="reserve-button" onclick="event.stopPropagation()">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                          </svg>
+                          Rezervace
+                        </a>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                
+                <!-- Day 3 -->
+                <div class="event-day">
+                  <h2 class="day-header">PÁTEK 21. BŘEZEN 2025</h2>
+                  <div class="day-events">
+                    <!-- Event 3 -->
+                    <a href="course-details.html?id=3" class="event-card">
+                      <div class="event-days">
+                        <span>DNY</span>
+                        <span>5</span>
+                      </div>
+                      
+                      <div class="event-details">
+                        <h3 class="event-title">Příměstský tábor Bruslík a Loděnice III</h3>
+                        <p class="event-organizer">Trojhalí Karolina</p>
+                        <div class="event-date">21. - 25. března 2025</div>
+                        
+                        <div class="event-capacity">
+                          <div class="capacity-bar">
+                            <div class="capacity-fill low" style="width: 28%"></div>
+                          </div>
+                          <span class="capacity-text">
+                            10 / 35
+                          </span>
+                        </div>
+                      </div>
+                      
+                      <div class="event-action">
+                        <a href="reservation.html?id=3" class="reserve-button" onclick="event.stopPropagation()">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                          </svg>
+                          Rezervace
+                        </a>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                
+                <!-- Day 4 -->
+                <div class="event-day">
+                  <h2 class="day-header">PÁTEK 28. BŘEZEN 2025</h2>
+                  <div class="day-events">
+                    <!-- Event 4 -->
+                    <a href="course-details.html?id=4" class="event-card">
+                      <div class="event-days">
+                        <span>DNY</span>
+                        <span>5</span>
+                      </div>
+                      
+                      <div class="event-details">
+                        <h3 class="event-title">Příměstský tábor Bruslík a Loděnice IV</h3>
+                        <p class="event-organizer">Trojhalí Karolina</p>
+                        <div class="event-date">28. - 30. března 2025</div>
+                        
+                        <div class="event-capacity">
+                          <div class="capacity-bar">
+                            <div class="capacity-fill low" style="width: 14%"></div>
+                          </div>
+                          <span class="capacity-text">
+                            5 / 35
+                          </span>
+                        </div>
+                      </div>
+                      
+                      <div class="event-action">
+                        <a href="reservation.html?id=4" class="reserve-button" onclick="event.stopPropagation()">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                          </svg>
+                          Rezervace
+                        </a>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="calendar-footer">
+                <p>
+                  Zobrazeno období od 1. března 2025 do 31. března 2025
+                </p>
+              </div>
+            </div>
+          </main>
+          
+        <footer class="main-footer">
+            <div class="footer-content">
+                <p>© <span id="current-year">2025</span> Rezervační kalendář. Všechna práva vyhrazena.</p>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="kalendar.js"></script>
+</body>
+
+</html>
